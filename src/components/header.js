@@ -35,6 +35,12 @@ const NavBar = styled.nav`
     font-size: 18px;
     color: #fff;
   }
+  a:hover {
+    color: #524763;
+  }
+  a:active {
+    color: teal;
+  }
 `;
 
 const Header = ({ siteTitle }) => (
