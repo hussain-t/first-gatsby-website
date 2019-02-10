@@ -8,10 +8,6 @@ import Header from "./header"
 import "./layout.css"
 import Archive from "./archive";
 
-const Container = styled.div`
-  
-`
-
 const Showcase = styled.section`
   max-height: 300px;
   margin-bottom: 30px;
@@ -43,10 +39,10 @@ const Layout = ({ children }) => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
         <Showcase>
-          <Container>
+          <div>
             {/* <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1> */}
             <Img fluid={data.file.childImageSharp.fluid} />
-          </Container>
+          </div>
         </Showcase>
         <div
           style={{

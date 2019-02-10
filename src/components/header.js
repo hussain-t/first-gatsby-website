@@ -36,7 +36,7 @@ const NavBar = styled.nav`
     color: #fff;
   }
   a:hover {
-    color: #524763;
+    color: teal;
   }
   a:active {
     color: teal;
@@ -46,10 +46,7 @@ const NavBar = styled.nav`
 const Header = ({ siteTitle }) => (
   <HeaderWrapper>
     <Container>
-      <div style={{
-        float: "left",
-        width: "60%"
-      }}>
+      <div className="logo-container">
         <h3>
           <Link
             to="/"
@@ -62,7 +59,7 @@ const Header = ({ siteTitle }) => (
           </Link>
         </h3>
       </div>
-      <NavBar>
+      <NavBar className="navbar">
         <ul>
           <li><Link to='/'>Home</Link></li>
           <li><Link to='/about'>About</Link></li>
